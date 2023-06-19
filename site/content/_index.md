@@ -27,6 +27,6 @@ products:
   - image: /img/illustrations-coffee-gear.svg
     text: Coconut
 values:
-  heading: Nos valeurs
-  text: Cette partie n'est sans doute pas nécessaire
+  heading: Nos objectifs
+  text: "* Fédérer le référencement d'acteurs, activités, emplacements et produit"
 ---
