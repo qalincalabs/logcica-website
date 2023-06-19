@@ -1,6 +1,6 @@
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
+languageCode = "fr-be"
+languageLang = "fr"
 title = "logCiCa"
 
 # RSS, categories and tags disabled for an easy start
