@@ -1,20 +1,28 @@
 ---
-title: "Great coffee with a conscience"
-subtitle: Support sustainable farming while enjoying a cup
+title: "La logistique collaborative pour les circuits courts"
+subtitle: "Faciliter et structurer l'échange d'information entre les acteurs via le digital"
 image: /img/home-jumbotron.jpg
 blurb:
-    heading: Why Kaldi?
-    text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."
+    heading: Pourquoi logCiCa?
+    text: "Les outils digitaux de la grande distribution sont mal adaptés à la richesse des circuits courts. Les ERPs ne permettent pas d'atteindre, au niveau logistique, le seuil de maturité collaboratif. Les solutions digitales orientées circuits courts sont en sous effectif et l'intéropérabilité digitale requiert un certain niveau d'expertise"
 intro:
-    heading: "What we offer"
-    text: "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone."
+    heading: "Ce qu'on offre"
+    text: "Des outils basés sur un même backend"
 products:
     - image: img/illustrations-coffee.svg
-      text: "We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability."
+      text: "Le modèle de données"
+    - image: img/illustrations-coffee.svg
+      text: "Le backend logCiCa"
+    - image: img/illustrations-coffee.svg
+      text: "Les intégrations logCiCa"
     - image: /img/illustrations-coffee-gear.svg
-      text: "We offer a small, but carefully curated selection of brewing gear and tools for every taste and experience level. No matter if you roast your own beans or just bought your first french press, you’ll find a gadget to fall in love with in our shop."
+      text: "Koala"
+    - image: /img/illustrations-coffee-gear.svg
+      text: "Cockpit"
+    - image: /img/illustrations-coffee-gear.svg
+      text: "Coconut"
 values:
-    heading: Our values
-    text: Coffee is an amazing part of human culture but it has a dark side too – one of colonialism and mindless abuse of natural resources and human lives. We want to turn this around and return the coffee trade to the drink’s exhilarating, empowering and unifying nature.
+    heading: Nos valeurs
+    text: Cette partie n'est sans doute pas nécessaire
 ---
 
