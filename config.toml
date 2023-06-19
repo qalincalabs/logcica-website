@@ -1,6 +1,5 @@
 languageCode = "en-us"
 title = "My New Netlify Victor Hugo Site"
-publish_mode = "editorial_workflow"
 
 [backend]
 name = "git-gateway"

@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
+publish_mode: "editorial_workflow"
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
@@ -14,6 +15,16 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "tools"
+    label: "Outils"
+    folder: "site/content/tools"
+    create: true
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Created at", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
