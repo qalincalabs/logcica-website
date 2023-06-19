@@ -2,5 +2,5 @@ languageCode = "en-us"
 title = "My New Netlify Victor Hugo Site"
 
 [backend]
-name = git-gateway
-branch = main
+name = "git-gateway"
+branch = "main"
