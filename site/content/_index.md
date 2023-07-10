@@ -26,7 +26,14 @@ products:
     text: Cockpit
   - image: /img/illustrations-coffee-gear.svg
     text: Coconut
-values:
-  heading: Nos objectifs
-  text: "* Fédérer le référencement d'acteurs, activités, emplacements et produit"
+
 ---
+
+# Nos objectifs
+
+* Facilitate le partage de l’information **logistique** (*commande, livraison, tournée*) et **circuits courts** (*qualité, diversité, valeurs, proximité, convivialité*)
+* Façonne l’avenir (stratégie) et **optimise** la gestion au quotidien (opérationnel)
+* Équipe la **collaboration** entre acteurs
+
+> À l’échelle de l’activité, l’entreprise, du groupement et du territoire
+

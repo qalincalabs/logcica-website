@@ -6,7 +6,11 @@
 
 {{ partial "2-up" .Params }}
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+<div class="bg-grey-1 pv4">
+	<div class="cms ph3 mw7 center">
+        {{ .Content }}
+    </div>
+</div>
 
 {{ partial "blog" . }}
 
