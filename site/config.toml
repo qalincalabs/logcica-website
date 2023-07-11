@@ -7,3 +7,9 @@ title = "logCiCa"
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[caches]
+  [caches.getcsv]
+    maxAge = 0
+  [caches.getjson]
+    maxAge = 0
