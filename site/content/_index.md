@@ -37,3 +37,9 @@ products:
 
 > À l’échelle de l’activité, l’entreprise, du groupement et du territoire
 
+# Exemple d'intégration
+
+## Les producteurs du marché de Léglise
+
+{{< iframe "https://app.appsmith.com/app/marche-du-terroir/page1-652d6ebfe1b5b8094d12fb42?embed=true" >}}
+
