@@ -1,0 +1,41 @@
+{{ define "main" }} 
+{{ $buildingBlocks := $.Site.Data.buildingBlocks }} 
+{{ $concerns := slice }} 
+{{ range $buildingBlocks }} 
+  {{ $concerns = $concerns | append .softwareConcern }} 
+{{ end }} 
+{{ $concerns = uniq $concerns }}
+
+<section class="mb4">
+  {{ range $concerns }} {{ $concern := . }}
+  <section class="mw9 center ph3-ns">
+    <h2 class="f1 mb2 underline">{{ $concern }}</h2>
+    <section class="flex flex-wrap">
+      {{ range where $buildingBlocks "softwareConcern" $concern }}
+      <div class="fl w-100 w-50-ns w-third-l pa2">
+        <article class="outline pa2">
+          <div class="flex items-center">
+            <h4 class="f2">{{ .name }}</h4>
+            <div class="ml2">
+              {{ with .url }}
+                <a href="{{ . }}"><i class="fa-solid fa-link"></i></i></a>
+              {{ end }}
+              {{ with .repoUrl }}
+                <a href="{{ . }}"><i class="fa-solid fa-code"></i></i></a>
+              {{ end }}
+            </div>
+          </div>
+          <p class="i">{{ .type }}</p>
+          <p>{{ .description.short.markdown }}</p>
+          <div class="flex justify-between">
+            <p class="b">{{ .devStatus }}</p>
+            <p class="i grey-3">sur logCiCa {{ .modelVersion }}</p>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </section>
+  </section>
+  {{end}}
+</section>
+{{end}}

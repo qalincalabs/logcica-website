@@ -1,0 +1,247 @@
+[{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada1a"
+  },
+  "name": "Explore",
+  "softwareConcern": "Frontend",
+  "type": "Logiciel de contenu",
+  "description": {
+    "short": {
+      "markdown": "Explorer les opportunités circuits courts : produits, marchés, groupements, ..."
+    }
+  },
+  "devStatus": "Actif",
+  "modelVersion": "2.0",
+  "url": "https://qalincalabs.github.io/logcica-discover/",
+  "repoUrl": "https://github.com/qalincalabs/logcica-discover"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada1b"
+  },
+  "name": "Au quotidien",
+  "softwareConcern": "Frontend",
+  "type": "Logiciel de gestion",
+  "description": {
+    "short": {
+      "markdown": "Gérer ses activités et collaborer au quotidien (produits, commandes, abonnements, ...) via cet ERP collaboratif"
+    }
+  },
+  "devStatus": "Actif",
+  "modelVersion": "2.0",
+  "url": "https://app.appsmith.com/app/logcica-au-quotidien/abonnements-64ef08fa59a48d0a66258f85"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada1c"
+  },
+  "name": "Cockpit",
+  "softwareConcern": "Frontend",
+  "type": "Tableau de bord Mongo Charts",
+  "description": {
+    "short": {
+      "markdown": "Suivre ses activités, sa performance logistique, les indicateurs d'un territoire via des tableaux de bord"
+    }
+  },
+  "devStatus": "En suspens",
+  "modelVersion": "1.0 & 2.0",
+  "repoUrl": "https://github.com/qalincalabs/cockpit"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada1d"
+  },
+  "name": "Simulateur",
+  "softwareConcern": "Frontend",
+  "type": "Feuille de tableur",
+  "description": {
+    "short": {
+      "markdown": "Analyser et simuler les partenariats logistiques"
+    }
+  },
+  "note": "anciennement Koala",
+  "devStatus": "En suspens",
+  "modelVersion": "1.0",
+  "url": "https://docs.google.com/spreadsheets/d/1911VmU56UkR1faytEkeM-cnDhJSywItnhr506cJV-C0",
+  "repoUrl": "https://github.com/qalincalabs/koala"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada1e"
+  },
+  "name": "Chat",
+  "softwareConcern": "Frontend",
+  "type": "Application Slack",
+  "description": {
+    "short": {
+      "markdown": "Gérer ses activités et collaborer depuis la messagerie Slack"
+    }
+  },
+  "note": "anciennement Coconut",
+  "devStatus": "Refonte complète à réaliser",
+  "modelVersion": "1.0",
+  "repoUrl": "https://github.com/qalincalabs/coconut"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada1f"
+  },
+  "name": "API",
+  "softwareConcern": "Backend",
+  "type": "API",
+  "description": {
+    "short": {
+      "markdown": "Le backend de la plateforme : API pour les différents outils visuels et d'intégration"
+    }
+  },
+  "devStatus": "Actif",
+  "modelVersion": "2.0",
+  "repoUrl": "https://github.com/qalincalabs/logcica"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada20"
+  },
+  "name": "Base de données",
+  "softwareConcern": "Backend",
+  "type": "Base de données",
+  "description": {
+    "short": {
+      "markdown": "La base de données (mongoDB) de la plateforme"
+    }
+  },
+  "devStatus": "Actif",
+  "modelVersion": "2.0"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada21"
+  },
+  "name": "Connector",
+  "softwareConcern": "Integration",
+  "type": "Intégration et librarie",
+  "description": {
+    "short": {
+      "markdown": "Intègre les plateformes externes avec logCiCa"
+    }
+  },
+  "devStatus": "Légèrement actif",
+  "modelVersion": "1.0 et 2.0"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada22"
+  },
+  "name": "Transformer",
+  "softwareConcern": "Integration",
+  "type": "Librarie de code",
+  "description": {
+    "short": {
+      "markdown": "Transforme les données entre un contexte externe (ex: plateforme de vente en ligne) et logCiCa"
+    }
+  },
+  "parent": "Connector",
+  "devStatus": "Légèrement actif",
+  "modelVersion": "1.0 et 2.0",
+  "url": "https://www.npmjs.com/package/@qalincalabs/logcica-connectors",
+  "repoUrl": "https://github.com/qalincalabs/logcica-connectors"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada23"
+  },
+  "name": "Consolidator",
+  "softwareConcern": "Integration",
+  "type": "Librarie de code",
+  "description": {
+    "short": {
+      "markdown": "Consolide les données externes reçues (transformées) dans logCiCa"
+    }
+  },
+  "parent": "Connector",
+  "devStatus": "En suspens",
+  "modelVersion": "1.0",
+  "url": "https://www.npmjs.com/package/@qalincalabs/consolidator",
+  "repoUrl": "https://github.com/qalincalabs/consolidator"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada24"
+  },
+  "name": "Auditeur",
+  "softwareConcern": "Integration",
+  "type": "Flux de travail n8n",
+  "description": {
+    "short": {
+      "markdown": "Observe les plateformes externes et notifie logCiCa via des évènements : nouvelle commande, produit modifié, ..."
+    }
+  },
+  "parent": "Connector",
+  "devStatus": "En suspens",
+  "modelVersion": "1.0 et 2.0"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada25"
+  },
+  "name": "Embarqué",
+  "softwareConcern": "Integration",
+  "type": "Contenu web",
+  "description": {
+    "short": {
+      "markdown": "HTML généré et application sur mesure à embarquer dans des sites webs externes"
+    }
+  },
+  "devStatus": "Légèrement actif",
+  "modelVersion": "2.0"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada26"
+  },
+  "name": "CDN",
+  "softwareConcern": "Integration",
+  "type": "API de contenu",
+  "description": {
+    "short": {
+      "markdown": "Héberge les ressources médias de la plateforme (ou les référence) : images, vidéos"
+    }
+  },
+  "devStatus": "Légèrement actif",
+  "modelVersion": "2.0",
+  "url": "https://dash.deno.com/playground/image-cdn-logcica"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada27"
+  },
+  "name": "Limosa",
+  "softwareConcern": "Backend",
+  "type": "Librarie de code",
+  "description": {
+    "short": {
+      "markdown": "Libraire de géolocalisation d'une adresse via OSM (gratuit)"
+    }
+  },
+  "devStatus": "En suspens, arrêt potentiel",
+  "modelVersion": "1.0",
+  "url": "https://www.npmjs.com/package/@qalincalabs/limosa",
+  "repoUrl": "https://github.com/qalincalabs/limosa"
+},
+{
+  "_id": {
+    "$oid": "65369d1b5be8146fac9ada28"
+  },
+  "name": "Site web",
+  "softwareConcern": "Frontend",
+  "type": "Site web de contenu",
+  "description": {
+    "short": {
+      "markdown": "Le site web de la plateforme"
+    }
+  },
+  "devStatus": "Actif",
+  "modelVersion": "1.0",
+  "url": "https://logcica.netlify.app/",
+  "repoUrl": "https://github.com/qalincalabs/logcica-website"
+}]
