@@ -10,7 +10,7 @@
       "markdown": "Explorer les opportunités circuits courts : produits, marchés, groupements, ..."
     }
   },
-  "devStatus": "Actif",
+  "devStatus": "Actif ++",
   "modelVersion": "2.0",
   "url": "https://qalincalabs.github.io/logcica-discover/",
   "repoUrl": "https://github.com/qalincalabs/logcica-discover"
@@ -27,7 +27,7 @@
       "markdown": "Gérer ses activités et collaborer au quotidien (produits, commandes, abonnements, ...) via cet ERP collaboratif"
     }
   },
-  "devStatus": "Actif",
+  "devStatus": "Actif ++",
   "modelVersion": "2.0",
   "url": "https://app.appsmith.com/app/logcica-au-quotidien/abonnements-64ef08fa59a48d0a66258f85"
 },
@@ -78,7 +78,7 @@
     }
   },
   "note": "anciennement Coconut",
-  "devStatus": "Refonte complète à réaliser",
+  "devStatus": "À refondre",
   "modelVersion": "1.0",
   "repoUrl": "https://github.com/qalincalabs/coconut"
 },
@@ -94,7 +94,7 @@
       "markdown": "Le backend de la plateforme : API pour les différents outils visuels et d'intégration"
     }
   },
-  "devStatus": "Actif",
+  "devStatus": "Actif ++",
   "modelVersion": "2.0",
   "repoUrl": "https://github.com/qalincalabs/logcica"
 },
@@ -110,7 +110,7 @@
       "markdown": "La base de données (mongoDB) de la plateforme"
     }
   },
-  "devStatus": "Actif",
+  "devStatus": "Actif ++",
   "modelVersion": "2.0"
 },
 {
@@ -125,7 +125,7 @@
       "markdown": "Intègre les plateformes externes avec logCiCa"
     }
   },
-  "devStatus": "Légèrement actif",
+  "devStatus": "Actif",
   "modelVersion": "1.0 et 2.0"
 },
 {
@@ -141,7 +141,7 @@
     }
   },
   "parent": "Connector",
-  "devStatus": "Légèrement actif",
+  "devStatus": "Actif",
   "modelVersion": "1.0 et 2.0",
   "url": "https://www.npmjs.com/package/@qalincalabs/logcica-connectors",
   "repoUrl": "https://github.com/qalincalabs/logcica-connectors"
@@ -177,7 +177,7 @@
     }
   },
   "parent": "Connector",
-  "devStatus": "En suspens",
+  "devStatus": "Actif",
   "modelVersion": "1.0 et 2.0"
 },
 {
@@ -192,7 +192,7 @@
       "markdown": "HTML généré et application sur mesure à embarquer dans des sites webs externes"
     }
   },
-  "devStatus": "Légèrement actif",
+  "devStatus": "Actif",
   "modelVersion": "2.0"
 },
 {
@@ -207,7 +207,7 @@
       "markdown": "Héberge les ressources médias de la plateforme (ou les référence) : images, vidéos"
     }
   },
-  "devStatus": "Légèrement actif",
+  "devStatus": "Actif",
   "modelVersion": "2.0",
   "url": "https://dash.deno.com/playground/image-cdn-logcica"
 },
@@ -223,7 +223,7 @@
       "markdown": "Libraire de géolocalisation d'une adresse via OSM (gratuit)"
     }
   },
-  "devStatus": "En suspens, arrêt potentiel",
+  "devStatus": "Archivé",
   "modelVersion": "1.0",
   "url": "https://www.npmjs.com/package/@qalincalabs/limosa",
   "repoUrl": "https://github.com/qalincalabs/limosa"
@@ -240,7 +240,7 @@
       "markdown": "Le site web de la plateforme"
     }
   },
-  "devStatus": "Actif",
+  "devStatus": "Actif ++",
   "modelVersion": "1.0",
   "url": "https://logcica.netlify.app/",
   "repoUrl": "https://github.com/qalincalabs/logcica-website"

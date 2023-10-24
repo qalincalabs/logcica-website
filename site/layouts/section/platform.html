@@ -5,17 +5,17 @@
   {{ $concerns = $concerns | append .softwareConcern }} 
 {{ end }} 
 {{ $concerns = uniq $concerns }}
-
+<h1 class="f1 tc">La plateforme</h1>
 <section class="mb4">
   {{ range $concerns }} {{ $concern := . }}
   <section class="mw9 center ph3-ns">
-    <h2 class="f1 mb2 underline">{{ $concern }}</h2>
+    <h2 class="f2 mb2 bg-primary pl3">{{ $concern }}</h2>
     <section class="flex flex-wrap">
       {{ range where $buildingBlocks "softwareConcern" $concern }}
       <div class="fl w-100 w-50-ns w-third-l pa2">
-        <article class="outline pa2">
+        <article class="outline br1 pa2">
           <div class="flex items-center">
-            <h4 class="f2">{{ .name }}</h4>
+            <h4 class="f3">{{ .name }}</h4>
             <div class="ml2">
               {{ with .url }}
                 <a href="{{ . }}"><i class="fa-solid fa-link"></i></i></a>
@@ -28,7 +28,7 @@
           <p class="i">{{ .type }}</p>
           <p>{{ .description.short.markdown }}</p>
           <div class="flex justify-between">
-            <p class="b">{{ .devStatus }}</p>
+            <p class="b ph1 outline br1 bg-primary">{{ .devStatus }}</p>
             <p class="i grey-3">sur logCiCa {{ .modelVersion }}</p>
           </div>
         </article>
