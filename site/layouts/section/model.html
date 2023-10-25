@@ -1,40 +1,73 @@
 {{ define "main" }} 
+
 {{ $types := $.Site.Data.graphqlTypes.data.__schema.types }} 
 
+<section class="mw7 center">
 <h1 class="f1 tc" >Le modèle</h1>
+
+<section>
+  <div class="w-75-l center">
+  {{ "././static/img/logcica-entity-structured-2023-10-25.svg" |  readFile | safeHTML }}
+  </div>
+
+  <a href="https://play.d2lang.com/?script=rFfNbtswDL77KXTZZYDSJE7aLoddBgzYdW-gyIyt1ZYMSU5RFHn3QfKPaMddnUxHUSY_8hP_3DF5IO8JIVAdIcsga0-EePcOpGb8heWQEHJJCKmZtm-TL0TV3hPiCDmQwtraHB4e3MmsLGjNjNUNtyuuqgcwBqQVrDRftj_Txz1tDOiVOecdgmmOf4DbeBib3Za2dCGUCizLmGXxYNaPGyrkSSEQziwrVR4PY7vb05MqsxFhtVZZE5OwdL2jTPNCnAEHoxppQUeESfe0UBXG0FAyV8OmELWJSNvzE3UliZBcSURE2OxS-iqkK2oEYkUFv5nMIR6QM4nTmEmWAzuWESG26x01YK2QOQ7G8AKypoyM9ZRSzkqQGcMpXSpXOlGR0n1K65JxKKb145ugOIm4eJs0pcaOouJKWi2OTeTI1t-2VIJ9Vfpl3BVOIvJrbdbPtIKc1YWSOAsNGCOUjAz2tKWnkuUDziVJlM6ZFMb3iBYpFMDKv-MBSaYahH4njFtxFn6ETUfogXwl753f_EQrJt8ulysDjmZTMw53WwiNdJl-4mauBO2a4rKgkYIDnLC2DHViY8jdW2wkE60w3Xu_uyMuDqX7S79rLAgXP0lCiHqVcLON0XSbtYD63-B9EH0G4a71C1jfgvr7DhThe6rbrWEkciunH_ELiUdpfi8jvQmHH1aMhfhdR-jg2_y7dmGYj_3FIAjL08BVx0ow7hw7MsuLxW4hxZ56JDo17lehArk8TqTtfzduqAy8GmbCfJT7HfM_mIVcaQFm4ANNrelsCfmFhElARVn2y0J1s9edUnBv8Lo9JuNPUQa5hpz1ZcYbY1U1U2lQltdSv7H1Qn-YLoz95UjYDgE38b3OJPTpVe-mF9-ZFIlpjoZrUYeuV2t1FtlMpO2XxxtL49NWtICWWUInzt9LwEjnHw-tatBsJun_w_0AHR7VN4nZmyEr-z7yoVNuquL_rNmW2n4xlV-SBPve6ndb6HU-4Ok4q3_XPAgKH2Bfkr8BAAD__w%3D%3D&layout=elk&theme=301&">
+    <p class="tc center">
+    Jouer avec le modèle
+    </p>
+  </a>
+</section>
+
 <h2 class="f2 mb2 bg-primary pl3">Entités principales</h2>
 
 {{ $queryEntity := index (where $types "name" "Query") 0 }}
-{{ $aggregates := sort (where $queryEntity.fields "type.kind" "OBJECT" ) $queryEntity.fields "name" "asc"}}
+{{ $queryAggregates := sort (where $queryEntity.fields "type.kind" "OBJECT" ) $queryEntity.fields "name" "asc"}}
+{{ $aggregateNames := slice }} 
+{{ $aggregates := slice }} 
+{{ range $queryAggregates }} 
+  {{ $name := (.name | strings.FirstUpper) }}
+  {{ $aggregateNames = $aggregateNames | append $name }} 
+  {{ $aggregates = $aggregates | append (index (where $types "name" $name) 0) }} 
+{{ end }} 
 
-<section class="flex flex-wrap mb3">
-    {{ range $aggregates }}
-      <a href='{{ .Page.Permalink }}' class="no-underline">
+{{ $relPermalink := .RelPermalink }}
+
+<section class="flex flex-wrap pt1 pb3 bw2 bb b--primary">
+    {{ range $aggregateNames }}
+      <a href="{{ $relPermalink }}#{{ . }}" class="no-underline">
         <div class="outline br1 ma1 pa1">
-        {{ .name }}
+        {{ . }}
         </div>
       </a>
     {{ end }}
-<section>
-
-<section class="mb3 ma2">
-    {{range $aggregates}}
-        <article id="{{ .name }}">
-        <h3 class="f3" >{{ .name }}</h3>
-        {{ $aggregate := index (where $types "name" (.name | strings.FirstUpper)) 0 }}
-        {{range sort $aggregate.fields "name" "asc"}}
-            <div class="ml2">
-                {{ .name }}
-                <span class="i">
-                {{ .type.name }}
-                {{ if .type.ofType }}
-                  {{ if eq .type.kind "LIST" }}[{{ end }}{{ .type.ofType.name }}{{ if eq .type.kind "LIST" }}]{{ end }}
-                {{ end }}
-                </span>
-            </div>
-        {{end}}
-        </article>
-    {{end}}
 </section>
 
+<section class="mb3 pa2">
+  {{range $aggregates}}
+      <article id="{{ .name }}" class="pa2 bb bw1 b--primary">
+      <h3 class="f3" >{{ .name }}</h3>
+      {{range sort .fields "name" "asc"}}
+          <div class="ml2">
+              {{ .name }}
+              {{ $mainType := cond (eq .type.ofType nil) .type .type.ofType }}
+              <span class="i">
+                {{ if eq .type.kind "LIST" }}
+                  <span>[</span>
+                {{ end }}
+                {{if or (in $aggregateNames $mainType.name) }}
+                  <a href="{{ $relPermalink }}#{{ .type.name }}">
+                {{ end }}
+                  {{ $mainType.name }}
+                {{if in $aggregateNames $mainType.name }}
+                  </a>
+                {{ end }}
+                {{ if eq .type.kind "LIST" }}
+                  <span>]</span>
+                {{ end }}
+              </span>
+          </div>
+      {{end}}
+      </article>
+  {{end}}
+</section>
+</section>
 {{ end }}

@@ -5,6 +5,9 @@
   "name": "Explore",
   "softwareConcern": "Frontend",
   "type": "Logiciel de contenu",
+  "image": {
+    "fileName": "explore-products.png"
+  },
   "description": {
     "short": {
       "markdown": "Explorer les opportunités circuits courts : produits, marchés, groupements, ..."
@@ -22,6 +25,9 @@
   "name": "Au quotidien",
   "softwareConcern": "Frontend",
   "type": "Logiciel de gestion",
+  "image": {
+    "fileName": "erp-subscriptions.png"
+  },
   "description": {
     "short": {
       "markdown": "Gérer ses activités et collaborer au quotidien (produits, commandes, abonnements, ...) via cet ERP collaboratif"
@@ -38,6 +44,9 @@
   "name": "Cockpit",
   "softwareConcern": "Frontend",
   "type": "Tableau de bord Mongo Charts",
+  "image": {
+    "fileName": "cockpit-graphs.png"
+  },
   "description": {
     "short": {
       "markdown": "Suivre ses activités, sa performance logistique, les indicateurs d'un territoire via des tableaux de bord"
@@ -235,6 +244,9 @@
   "name": "Site web",
   "softwareConcern": "Frontend",
   "type": "Site web de contenu",
+  "image": {
+    "fileName": "website-main-page.png"
+  },
   "description": {
     "short": {
       "markdown": "Le site web de la plateforme"
