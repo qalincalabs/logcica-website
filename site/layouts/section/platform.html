@@ -26,7 +26,17 @@
             </div>
           </div>
           <p class="i">{{ .type }}</p>
-          <p>{{ .description.short.markdown }}</p>
+          {{ with .image }}
+            <img class="mb2" src="/img/{{ .fileName }}" />
+          {{ end }}
+          <p>
+            {{ .description.short.markdown }}
+            {{ with .note }}
+            <span class="f6 i">
+                [{{ . }}]
+            </span>
+            {{ end }}
+          </p>
           <div class="flex justify-between">
             <p class="b ph1 outline br1 bg-primary">{{ .devStatus }}</p>
             <p class="i grey-3">sur logCiCa {{ .modelVersion }}</p>
