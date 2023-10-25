@@ -2,20 +2,39 @@
 {{ $types := $.Site.Data.graphqlTypes.data.__schema.types }} 
 
 <h1 class="f1 tc" >Le modèle</h1>
-<h2 class="f2 b" >Les entités</h2>
+<h2 class="f2 mb2 bg-primary pl3">Entités principales</h2>
 
-{{ range sort (where $types "kind" "OBJECT") "name" "asc" }}
-    {{ if hasPrefix .name "__" }}
-    {{ else }}
-    <article>
-        <h3 class="f3" >{{ .name }}</h3>
-        <p>
-          {{range sort .fields "name" "asc"}}
-            {{ .name }} |
-          {{end}}
-        </p>
-    </article>
+{{ $queryEntity := index (where $types "name" "Query") 0 }}
+{{ $aggregates := sort (where $queryEntity.fields "type.kind" "OBJECT" ) $queryEntity.fields "name" "asc"}}
+
+<section class="flex flex-wrap mb3">
+    {{ range $aggregates }}
+      <a href='{{ .Page.Permalink }}' class="no-underline">
+        <div class="outline br1 ma1 pa1">
+        {{ .name }}
+        </div>
+      </a>
     {{ end }}
-{{ end }}
+<section>
+
+<section class="mb3 ma2">
+    {{range $aggregates}}
+        <article id="{{ .name }}">
+        <h3 class="f3" >{{ .name }}</h3>
+        {{ $aggregate := index (where $types "name" (.name | strings.FirstUpper)) 0 }}
+        {{range sort $aggregate.fields "name" "asc"}}
+            <div class="ml2">
+                {{ .name }}
+                <span class="i">
+                {{ .type.name }}
+                {{ if .type.ofType }}
+                  {{ if eq .type.kind "LIST" }}[{{ end }}{{ .type.ofType.name }}{{ if eq .type.kind "LIST" }}]{{ end }}
+                {{ end }}
+                </span>
+            </div>
+        {{end}}
+        </article>
+    {{end}}
+</section>
 
 {{ end }}
