@@ -11,22 +11,15 @@ blurb:
     digitales orientées circuits courts sont en sous effectif et
     l'intéropérabilité digitale requiert un certain niveau d'expertise
 intro:
-  heading: Ce qu'on offre
-  text: Des outils basés sur un même backend
+  heading: Les briques logicielles
+  text: Les outils, librairies et composants de la plateforme
 products:
-  - image: img/illustrations-coffee.svg
-    text: Le modèle de données
-  - image: img/illustrations-coffee.svg
-    text: Le backend logCiCa
-  - image: img/illustrations-coffee.svg
-    text: Les intégrations logCiCa
-  - image: /img/illustrations-coffee-gear.svg
-    text: Koala
-  - image: /img/illustrations-coffee-gear.svg
+  - image: /img/explore-products.png
+    text: Explore
+  - image: img/erp-subscriptions.png
+    text: ERP
+  - image: /img/cockpit-graphs.png
     text: Cockpit
-  - image: /img/illustrations-coffee-gear.svg
-    text: Coconut
-
 ---
 
 # Nos objectifs
@@ -36,10 +29,4 @@ products:
 * Équipe la **collaboration** entre acteurs
 
 > À l’échelle de l’activité, l’entreprise, du groupement et du territoire
-
-# Exemple d'intégration
-
-## Les producteurs du marché de Léglise
-
-{{< iframe "https://app.appsmith.com/app/marche-du-terroir/page1-652d6ebfe1b5b8094d12fb42?embed=true" >}}
 
