@@ -1,15 +1,70 @@
 {{ define "main" }} 
 
-<h1 class="f1 tc" >Intéropérabilité</h1>
+<h1 class="f2 tc" >Intéropérabilité</h1>
 
 <section class="mw7 center">
 
-<h2 class="f2 mb2 bg-primary pl3">Exemple d'intégration</h2>
+<h2 class="f3 mb2 bg-primary pl3">Exemple d'intégration</h2>
 
-<h3 class="f3 mb2">Les producteurs du marché de Léglise</h2>
-    
-<iframe style="width: 100%;height: 550px" src="https://app.appsmith.com/app/marche-du-terroir/page1-652d6ebfe1b5b8094d12fb42?embed=true"></iframe>
+<h3 class="f4 mb2 underline">Iframe</h2>
 
+<pre class="f6">
+    {{ `<iframe width="100%" height="550px"
+        src="https://app.appsmith.com/app/marche-du-terroir/page1-652d6ebfe1b5b8094d12fb42?embed=true">
+    </iframe>` }}
+</pre>
+
+<iframe width="100%" height="550px" src="https://app.appsmith.com/app/marche-du-terroir/page1-652d6ebfe1b5b8094d12fb42?embed=true"></iframe>
+
+<h3 class="f4 mb2 underline">HTML généré</h2>
+
+<section class="cms">    
+<section>
+<h4>Légumes, fruits, fleurs et plantes sauvages</h4>
+<div>
+<ul>
+<li><strong>Anne Dewez</strong> - Léglise - Miel, jus de pommes et bougies</li>
+<li><strong>Au Vieux Pré</strong> - Marbehan - Jus, confitures et produits régionaux</li>
+<li><strong>La Boîte à Délice</strong> - Bellefontaine - Conserverie artisanale</li>
+<li><strong>La Ferme de Pâques</strong> - Les Fossés (Léglise) - Légumes et plants BIO</li>
+<li><strong>Yvan des frites</strong> - Léglise - Frites maison</li>
+<li><strong>À la Main Verte</strong> - Ourt - Herbes aromatiques, thés et confitures</li>
+</ul>
+</div>
+</section>
+<section>
+<h4>Produits laitiers et fromages</h4>
+<div>
+<ul>
+<li><strong>Aux Saveurs Retrouvées</strong> - Straimont - Glaces, préparations sucrées et salées</li>
+<li><strong>Coopérative de la Côte Rouge</strong> - Attert - Fromages à pâte dure (vache)</li>
+<li><strong>La Ferme Biodynamique d&#39;Hamawé</strong> - Ethe - Produits laitiers et pâtes d&#39;épeautre</li>
+<li><strong>La Ferme du Champ des Cailloux</strong> - Namoussart - Fromages et autres préparations au lait de chèvre</li>
+</ul>
+</div>
+</section>
+<section>
+<h4>Charcuterie, salaisons et... apéros</h4>
+<div>
+<ul>
+<li><strong>BioBouchKeirse</strong> - Neufchâteau - Fabrication artisanale et bio</li>
+<li><strong>Brasserie Héritage</strong> - Léglise - Bières artisanales</li>
+<li><strong>Salaison Murielle Courtois</strong> - Bastogne - Salaison à l&#39;ancienne</li>
+</ul>
+</div>
+</section>
+<section>
+<h4>Farines, pains, pâtes et biscuits</h4>
+<div>
+<ul>
+<li><strong>Biscuiterie Dion</strong> - Volaiville (Léglise) - Biscuits et escargots</li>
+<li><strong>Campagne Boulangerie - Pâtisserie artisanale</strong> - Étalle - Pains artisanaux et pâtisseries</li>
+<li><strong>La Ferme de Habaru</strong> - Habaru (Léglise) - Farine d&#39;épeautre BIO, poulets, œufs...</li>
+<li><strong>La Ferme des Eaux Bonnes</strong> - Louftémont (Léglise) - Pâtes d&#39;épeautre BIO</li>
+</ul>
+</div>
+</section>
+</section>
 </section>
 
 {{ end }}

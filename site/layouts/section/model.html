@@ -3,7 +3,7 @@
 {{ $types := $.Site.Data.graphqlTypes.data.__schema.types }} 
 
 <section class="mw7 center">
-<h1 class="f1 tc" >Le modèle</h1>
+<h1 class="f2 tc" >Le modèle</h1>
 
 <section>
   <div class="w-75-l center">
@@ -17,7 +17,7 @@
   </a>
 </section>
 
-<h2 class="f2 mb2 bg-primary pl3">Entités principales</h2>
+<h2 class="f3 mb2 bg-primary pl3">Entités principales</h2>
 
 {{ $queryEntity := index (where $types "name" "Query") 0 }}
 {{ $queryAggregates := sort (where $queryEntity.fields "type.kind" "OBJECT" ) $queryEntity.fields "name" "asc"}}
@@ -34,7 +34,7 @@
 <section class="flex flex-wrap pt1 pb3 bw2 bb b--primary">
     {{ range $aggregateNames }}
       <a href="{{ $relPermalink }}#{{ . }}" class="no-underline">
-        <div class="outline br1 ma1 pa1">
+        <div class="f6 outline br1 ma1 pa1">
         {{ . }}
         </div>
       </a>
@@ -44,7 +44,7 @@
 <section class="mb3 pa2">
   {{range $aggregates}}
       <article id="{{ .name }}" class="pa2 bb bw1 b--primary">
-      <h3 class="f3" >{{ .name }}</h3>
+      <h3 class="f4" >{{ .name }}</h3>
       {{range sort .fields "name" "asc"}}
           <div class="ml2">
               {{ .name }}
