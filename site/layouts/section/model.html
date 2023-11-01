@@ -54,7 +54,7 @@
                   <span>[</span>
                 {{ end }}
                 {{if or (in $aggregateNames $mainType.name) }}
-                  <a href="{{ $relPermalink }}#{{ .type.name }}">
+                  <a href="{{ $relPermalink }}#{{ $mainType.name }}">
                 {{ end }}
                   {{ $mainType.name }}
                 {{if in $aggregateNames $mainType.name }}
