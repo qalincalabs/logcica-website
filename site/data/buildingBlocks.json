@@ -6,7 +6,7 @@
   "softwareConcern": "Frontend",
   "type": "Logiciel de contenu",
   "image": {
-    "fileName": "explore-products.png"
+    "fileName": "explore-products-wide.png"
   },
   "description": {
     "short": {
@@ -68,6 +68,9 @@
       "markdown": "Analyser et simuler les partenariats logistiques"
     }
   },
+  "image": {
+    "fileName": "simulateur-showcase-tours.png"
+  },
   "note": "anciennement Koala",
   "devStatus": "En suspens",
   "modelVersion": "1.0",
@@ -85,6 +88,9 @@
     "short": {
       "markdown": "Gérer ses activités et collaborer depuis la messagerie Slack"
     }
+  },
+  "image": {
+    "fileName": "coconut-tour-wide.png"
   },
   "note": "anciennement Coconut",
   "devStatus": "À refondre",
@@ -185,6 +191,9 @@
       "markdown": "Observe les plateformes externes et notifie logCiCa via des évènements : nouvelle commande, produit modifié, ..."
     }
   },
+  "image": {
+    "fileName": "auditor-n8n-workflow.png"
+  },
   "parent": "Connector",
   "devStatus": "Actif",
   "modelVersion": "1.0 et 2.0"
@@ -245,7 +254,7 @@
   "softwareConcern": "Frontend",
   "type": "Site web de contenu",
   "image": {
-    "fileName": "website-main-page.png"
+    "fileName": "website-main-page-wide.png"
   },
   "description": {
     "short": {
@@ -256,4 +265,40 @@
   "modelVersion": "1.0",
   "url": "https://logcica.netlify.app/",
   "repoUrl": "https://github.com/qalincalabs/logcica-website"
+},
+{
+  "name": "Enquête producteur",
+  "softwareConcern": "POC",
+  "type": "Enquête",
+  "description": {
+    "short": {
+      "markdown": "Enquête Google Form auprès des producteurs sur les sujets suivants : information produit, commercialisation, logistique et digitalisation"
+    }
+  },
+  "devStatus": "En suspens",
+  "url": "https://docs.google.com/forms/d/e/1FAIpQLSf7bAVfjoTIEC-ntGV0DwMBKTNqgjE8gVFkSjiiqBeSoWi-mQ/viewform?usp=sharing"
+},
+{
+  "name": "Auto-évaluation",
+  "softwareConcern": "POC",
+  "type": "Feuille de tableur",
+  "description": {
+    "short": {
+      "markdown": "S'auto-évaluer sur ses pratiques logistiques"
+    }
+  },
+  "devStatus": "En suspens",
+  "url": "https://docs.google.com/spreadsheets/d/1JJ0YOk1iqKhOHJpXQ6FR9nWXlIcgeIP_5NEhUehcPVA"
+},
+{
+  "name": "Consolidation produit - groupement de maraîchers",
+  "softwareConcern": "POC",
+  "type": "Feuille de tableur",
+  "description": {
+    "short": {
+      "markdown": "Consolider les variétés et les formats au sein d'un groupement de maraîchers"
+    }
+  },
+  "devStatus": "En suspens",
+  "url": "https://docs.google.com/spreadsheets/d/1QRn2w02TdhM8AslKMCJprpJcSJCkECs9raGz5R9Zveg/edit?usp=sharing"
 }]

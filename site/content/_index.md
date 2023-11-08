@@ -9,7 +9,7 @@ blurb:
     richesse des circuits courts. Les ERPs ne permettent pas d'atteindre, au
     niveau logistique, le seuil de maturité collaboratif. Les solutions
     digitales orientées circuits courts sont en sous effectif et
-    l'intéropérabilité digitale requiert un certain niveau d'expertise
+    l'interopérabilité digitale requiert un certain niveau d'expertise
 intro:
   heading: Les briques logicielles
   text: Les outils, librairies et composants de la plateforme
