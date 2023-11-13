@@ -2,6 +2,18 @@
 
 {{ partial "jumbotron-main" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
+<div class="mw7 center pa2">
+    <div class="measure-narrow center">
+        <form class="flex-ns" netlify>
+            <fieldset class="flex-auto mb2 mb0-ns mr2-ns">
+                <input type="text" id="email" placeholder="Ton email" class="w-100">
+                <label for="email">Ton email</label>
+            </fieldset>
+            <button class="btn w-100 w-auto-ns mb0-ns raise" type="submit">Rejoindre sur Slack</button>
+        </form>
+    </div>
+</div>
+
 {{ partial "short-text" .Params.blurb}}
 
 {{ partial "2-up" .Params }}

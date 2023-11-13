@@ -63,6 +63,8 @@ Grâce à l’outil [Cockpit](https://github.com/qalincalabs/cockpit)**,** **des
 
 Grâce à l’outil [Coconut](https://github.com/qalincalabs/coconut-slack-app) (et son interface graphique sur Slack, qui est une plateforme de communication collaborative ), une **commande créée sur OFN be devient un envoi sur logCiCa et s’affiche dans le canal Slack du producteur** (avec un poids total sur base du poids des produits référencés sur Open Batra par exemple). Le producteur peut alors créer une tournée et ajouter les envois qu’il souhaite à cette tournée. L’itinéraire de la tournée est calculé via une API externe. **Slack**, une application de messagerie pour entreprise, conserve **l’attrait d’une messagerie classique** pour l’**organisation informelle** d’une activité et des collaborations mais ajoute une dimension **d’interopérabilité système et graphique immense.** On peut véritablement construire une application sur Slack. 
 
+{{< figure src="/img/coconut-tour-wide.png" >}}
+
 L’outil Koala qui est utilisé comme un “bac à sable”  (pour simuler une collaboration logistique) peut être généré à partir des données structurées présentes dans le backend de la plateforme.
 
 Enfin, [Limosa](https://www.npmjs.com/package/@qalincalabs/limosa), une librairie de géolocalisation basée sur des API publiques est créée, ce qui permet d’ajouter une dimension géographique à logCiCa. La notion d’emplacement est ajoutée et permet de **situer les données à plusieurs échelles géographiques.**
