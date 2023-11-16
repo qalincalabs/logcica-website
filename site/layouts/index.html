@@ -4,11 +4,21 @@
 
 <div class="mw7 center pa2">
     <div class="measure-narrow center">
-        <form class="flex-ns" netlify>
+        <form 
+        class="flex-ns" 
+        name="slackInvitationRequest"
+        method="POST"
+        netlify-honeypot="firstname"
+        data-netlify="true">
             <fieldset class="flex-auto mb2 mb0-ns mr2-ns">
-                <input type="text" id="email" placeholder="Ton email" class="w-100">
+                <input type="text" id="email" placeholder="Ton email" name="email" class="w-100">
                 <label for="email">Ton email</label>
             </fieldset>
+            <fieldset class="flex-auto mb2 mb0-ns mr2-ns dn">
+                <input type="text" id="firstname" placeholder="Ton nom" name="firstname" class="w-100">
+                <label for="firstname">Ton prénom</label>
+            </fieldset>
+            <div class="dn"></div>
             <button class="btn w-100 w-auto-ns mb0-ns raise" type="submit">Rejoindre sur Slack</button>
         </form>
     </div>
