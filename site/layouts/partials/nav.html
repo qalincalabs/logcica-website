@@ -1,29 +1,62 @@
-<nav data-nav class="flex justify-between items-center center bg-white divider-grey relative">
+<nav
+  data-nav
+  class="flex justify-between items-center center bg-white divider-grey relative"
+>
+  <!-- Logo -->
+  <a href="/" class="pa2 db mr4 h-100 w4 flex-none">
+    <img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100" />
+  </a>
 
-	<!-- Logo -->
-	<a href="/" class="pa2 db mr4 h-100 w4 flex-none">
-		<img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/>
-	</a>
+  <!-- Primary Nav -->
+  <div data-mobile-menu class="mobile-menu-container">
+    <svg viewBox="0 0 100 80" width="40" height="25" class="mobile-menu-icon">
+      <rect
+        class="menu-icon-top mobile-menu-inner"
+        width="100"
+        height="8"
+      ></rect>
+      <rect
+        class="menu-icon-middle mobile-menu-inner"
+        y="30"
+        width="100"
+        height="8"
+      ></rect>
+      <rect
+        class="menu-icon-bottom mobile-menu-inner"
+        y="60"
+        width="100"
+        height="8"
+      ></rect>
+    </svg>
+  </div>
 
-	<!-- Primary Nav -->
-	<div data-mobile-menu class="mobile-menu-container">
-		<svg viewBox="0 0 100 80" width="40" height="25" class="mobile-menu-icon">
-			<rect class="menu-icon-top mobile-menu-inner" width="100" height="8"></rect>
-			<rect class="menu-icon-middle mobile-menu-inner" y="30" width="100" height="8"></rect>
-			<rect class="menu-icon-bottom mobile-menu-inner" y="60" width="100" height="8"></rect>
-		</svg>
-	</div>
+  <ul class="flex b grey-3 nav-menu">
+    <li><a href="/platform" class="pa3 no-underline db">Plateforme</a></li>
 
-	<ul class="flex b grey-3 nav-menu">
-		<li><a href="/platform" class="pa3 no-underline db">Plateforme</a></li>
+    <li><a href="/model" class="pa3 no-underline db">Modèle</a></li>
 
-		<li><a href="/model" class="pa3 no-underline db">Modèle</a></li>
+    <li><a href="/interop" class="pa3 no-underline db">Interop.</a></li>
 
-		<li><a href="/interop" class="pa3 no-underline db">Interop.</a></li>
+    <li><a href="/links" class="pa3 no-underline db">Liens</a></li>
 
-		<li><a href="/links" class="pa3 no-underline db">Liens</a></li>
+    <li><a href="/about" class="pa3 no-underline db">Story</a></li>
 
-		<li><a href="/about" class="pa3 no-underline db">Story</a></li>
-	</ul>
-
+    <li>
+      <a
+        href="https://logcica.slack.com/"
+        target="_blank"
+        class="pa3 no-underline db"
+      >
+        <i class="fa-brands fa-slack"></i
+      ></a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/qalincalabs"
+        target="_blank"
+        class="pa3 no-underline db"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+    </li>
+  </ul>
 </nav>
