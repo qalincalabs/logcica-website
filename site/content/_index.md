@@ -11,7 +11,7 @@ blurb:
     digitales orientées circuits courts sont en sous effectif et
     l'interopérabilité digitale requiert un certain niveau d'expertise
 intro:
-  heading: Les briques logicielles
+  heading: La plateforme
   text: Les outils, librairies et composants de la plateforme
 products:
   - image: /img/explore-products.png
@@ -20,6 +20,22 @@ products:
     text: ERP
   - image: /img/cockpit-graphs.png
     text: Cockpit
+model: 
+  benefits:
+    - title: Convivial
+      description: Facile à lire par un humain, le modèle est exprimé en JSON.
+    - title: Consistent
+      description: Les propriétés similaires sont exprimées de manière cohérente. 
+    - title: Extensible
+      description: Pensé pour être étendu et accueillir de nouvelles notions.
+    - title: Standardisé
+      description: Inspiré par des standards tels que GS1, schema.org, DFC.
+    - title: Opérationnel
+      description: Une attention particulère est portée sur sa capacité à être interrogé (base de données), manipulée (javascript), et représenté (templating).
+    - title: Orienté circuits courts
+      description: Les valeurs portées par les circuits courts, leur convivialité, la saisonnalité des produits et la logistique cyclique font partie intégrante du modèle.
+    - title: Orienté collaboration
+      description: Le rôle des acteurs est exprimé directement dans le modèle. Une commande a par exemple un vendeur et un client, elle est partagée entre les deux acteurs. 
 ---
 
 # Nos objectifs
