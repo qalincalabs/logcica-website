@@ -43,7 +43,7 @@
         <div class="flex flex-wrap">
             {{ range .Params.model.benefits }}
             <div class="w-50 pa3">
-                <h2>{{ .title }}</h2>
+                <h2><i class="fa-{{ .fontAwesome.style }} fa-{{ .fontAwesome.icon }}"></i> {{ .title }}</h2>
                 <p>{{ .description }}</p>
             </div>
             {{ end }}
