@@ -1,6 +1,6 @@
 ---
 title: Plateforme digitale pour la collaboration logistique en circuit court
-subtitle: Consolider l'information. Équiper l'optimisisation et la collaboration logistiques.
+subtitle: Consolider l'information. Équiper l'optimisation et la collaboration logistiques.
 image: img/athlete-man-bike-planet-earth.jpg
 intro:
   heading: La plateforme
