@@ -1,7 +1,6 @@
 ---
-title: La logistique collaborative pour les circuits courts
-subtitle: Faciliter et structurer l'échange d'information entre les acteurs via
-  le digital
+title: Plateforme digitale pour la collaboration logistique en circuit court
+subtitle: Faciliter et structurer l'échange d'information entre les acteurs via le digital. Outiller la collaboration logistique
 image: img/athlete-man-bike-planet-earth.jpg
 blurb:
   heading: Pourquoi logCiCa?
@@ -20,6 +19,46 @@ products:
     text: ERP
   - image: /img/cockpit-graphs.png
     text: Cockpit
+platform:
+  benefits:
+    - title: Multi-aspect et flexible
+      description: De la gestion au quotidien à la planification en passant par la promotion des activités et produits, la plateforme couvre aussi bien les besoins opérationnels et stratégiques en logistique.
+      fontAwesome:
+        style: solid
+        icon: palette
+    - title: Multi-acteur et -casquette
+      description: Les modes de gouvernance alternative et l'éventail de casquettes portées par les acteurs sont une richesse des circuits courts. La plateforme intègre ces richesses et s'adresse aux acteurs dans leur globalité pour leur offrir une expérience collaborative.
+      fontAwesome:
+        style: solid
+        icon: helmet-safety
+    - title: Évolutive et interopérable
+      description: Centralisé / Décentralisé Modulaire, Headless / API first
+      fontAwesome:
+        style: solid
+        icon: rotate-right
+    - title: Orienté circuit court
+      description: 
+      fontAwesome:
+        style: solid
+        icon: location-dot
+    - title: Ouverte et open source
+      fontAwesome:
+        style: solid
+        icon: door-open
+    - title: Moderne
+      description: Dans le domaine du software, as-tu déjà entendu parler de *low-code*, *static site generator*, *headless CMS*, *serverless*, *workflow automation tool*, *data warehouse*, *Jamstack*, *graphQL*, ... ? Un ensemble d'architecture et boîte à outils en vogue sur lequel s'appuie la plateforme.
+      fontAwesome:
+        style: solid
+        icon: bolt
+    - title: Informel et structurée
+      description: Structurer la déstructure. Structuré. Structuré où ça vous semble important
+      fontAwesome:
+        style: solid
+        icon: comments
+    - title: Orienté activité
+      fontAwesome:
+        style: solid
+        icon: gear
 model: 
   benefits:
     - title: Convivial
@@ -27,21 +66,6 @@ model:
       fontAwesome:
         style: solid
         icon: heart
-    - title: Consistent
-      description: Les propriétés similaires sont exprimées de manière cohérente. 
-      fontAwesome:
-        style: solid
-        icon: key
-    - title: Extensible
-      description: Pensé pour être étendu et accueillir de nouvelles notions.
-      fontAwesome:
-        style: solid
-        icon: pen
-    - title: Standardisé
-      description: Inspiré par des standards tels que GS1, schema.org, DFC.
-      fontAwesome:
-        style: solid
-        icon: globe
     - title: Opérationnel
       description: Une attention particulère est portée sur sa capacité à être interrogé (base de données), manipulée (javascript), et représenté (templating).
       fontAwesome:
@@ -57,6 +81,21 @@ model:
       fontAwesome:
         style: solid
         icon: handshake
+    - title: Standardisé
+      description: Inspiré par des standards tels que GS1, schema.org, DFC.
+      fontAwesome:
+        style: solid
+        icon: globe
+    - title: Extensible
+      description: Pensé pour être étendu et accueillir de nouvelles notions.
+      fontAwesome:
+        style: solid
+        icon: pen
+    - title: Consistent
+      description: Les propriétés similaires sont exprimées de manière cohérente. 
+      fontAwesome:
+        style: solid
+        icon: key
 ---
 
 # Nos objectifs
