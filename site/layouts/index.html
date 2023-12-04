@@ -11,7 +11,7 @@
         netlify-honeypot="firstname"
         data-netlify="true">
             <fieldset class="flex-auto mb2 mb0-ns mr2-ns">
-                <input type="text" id="email" placeholder="Ton email" name="email" class="w-100">
+                <input type="email" id="email" placeholder="Ton email" name="email" class="w-100">
                 <label for="email">Ton email</label>
             </fieldset>
             <fieldset class="flex-auto mb2 mb0-ns mr2-ns dn">
@@ -24,11 +24,13 @@
     </div>
 </div>
 
-{{ partial "short-text" .Params.blurb}}
+<div class="bg-grey-1 pv3">
+	<div class="cms ph3 mw7 center">
+        {{ .Content }}
+    </div>
+</div>
 
-{{ partial "2-up" .Params }}
-
-<div>
+<div class="pv3">
 	<div class="cms ph3 mw7 center">
         <div class="flex">
             <div class="w-70 ma2">
@@ -40,10 +42,27 @@
                 </a>
             </div>
         </div>
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap mhn2 mv2">
+            {{ range first 4 .Site.Data.buildingBlocks }}
+            <div class="ph2 w-50 w-25-l">
+                <h3 class="tc">{{ .name }}
+                    {{ with .url }}
+                    <a class="f6" href="{{ . }}" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    {{ end }}
+                </h3>
+              <img src="/img/{{.image.fileName}}" alt="" class="center db mb3 mw5">
+              <p class="tc">{{.type}}</p>
+            </div>
+            {{ end }}
+          </div>
+        
+        <div class="tc mv2">
+          <a href="/about" class="btn w-90">Se plonger dans son histoire</a>
+        </div>
+        <div class="flex flex-wrap mw6 mw7-l center">
             {{ range .Params.platform.benefits }}
-            <div class="w-50-ns pv1 ph3">
-                <h2><i class="fa-{{ .fontAwesome.style }} fa-{{ .fontAwesome.icon }}"></i> {{ .title }}</h2>
+            <div class="w-50-l pv1 ph3">
+                <h2><i class="primary fa-{{ .fontAwesome.style }} fa-{{ .fontAwesome.icon }}"></i> {{ .title }}</h2>
                 <p>{{ .description | markdownify }}</p>
             </div>
             {{ end }}
@@ -51,7 +70,7 @@
     </div>
 </div>
 
-<div class="bg-grey-1">
+<div class="bg-grey-1 pv3">
 	<div class="cms ph3 mw7 center">
         <div class="flex">
             <div class="w-70 ma2">
@@ -63,20 +82,17 @@
                 </a>
             </div>
         </div>
+        <div class="mw6 center">
+            {{ "././static/img/logcica-model-word-cloud-2023-12-04.svg" | readFile | safeHTML }}
+        </div>
         <div class="flex flex-wrap">
             {{ range .Params.model.benefits }}
             <div class="w-50-ns pv1 ph3">
-                <h2><i class="fa-{{ .fontAwesome.style }} fa-{{ .fontAwesome.icon }}"></i> {{ .title }}</h2>
+                <h2><i class="primary fa-{{ .fontAwesome.style }} fa-{{ .fontAwesome.icon }}"></i> {{ .title }}</h2>
                 <p>{{ .description | markdownify }}</p>
             </div>
             {{ end }}
         </div>
-    </div>
-</div>
-
-<div class="bg-grey-1">
-	<div class="cms ph3 mw7 center">
-        {{ .Content }}
     </div>
 </div>
 

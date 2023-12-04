@@ -1,14 +1,7 @@
 ---
 title: Plateforme digitale pour la collaboration logistique en circuit court
-subtitle: Faciliter et structurer l'échange d'information entre les acteurs via le digital. Outiller la collaboration logistique
+subtitle: Consolider l'information. Équiper l'optimisisation et la collaboration logistiques.
 image: img/athlete-man-bike-planet-earth.jpg
-blurb:
-  heading: Pourquoi logCiCa?
-  text: Les outils digitaux de la grande distribution sont mal adaptés à la
-    richesse des circuits courts. Les ERPs ne permettent pas d'atteindre, au
-    niveau logistique, le seuil de maturité collaboratif. Les solutions
-    digitales orientées circuits courts sont en sous effectif et
-    l'interopérabilité digitale requiert un certain niveau d'expertise
 intro:
   heading: La plateforme
   text: Les outils, librairies et composants de la plateforme
@@ -20,6 +13,15 @@ products:
   - image: /img/cockpit-graphs.png
     text: Cockpit
 platform:
+  tools: 
+    - image: /img/explore-products-wide.png
+      name: Explore
+    - image: img/erp-subscriptions.png
+      name: Au quotidien
+      description: Logiciel de gestion (ERP)
+    - image: /img/cockpit-graphs.png
+      name: Cockpit
+      description: Tableau de bord
   benefits:
     - title: Multi-aspect et flexible
       description: De la gestion au quotidien à la planification en passant par la promotion des activités et produits, la plateforme couvre aussi bien les besoins opérationnels et stratégiques en logistique.
@@ -32,16 +34,17 @@ platform:
         style: solid
         icon: helmet-safety
     - title: Évolutive et interopérable
-      description: Centralisé / Décentralisé Modulaire, Headless / API first
+      description: De futurs outils peuvent venir s'amarrer au coeur de la plateforme (via l'API). Au fur et à mesure que le modèle s'étend, les outils existants peuvent l'exprimer et ajouter des fonctionnalités autour des nouveaux concepts.
       fontAwesome:
         style: solid
         icon: rotate-right
-    - title: Orienté circuit court
-      description: 
+    - title: Orientée circuit court
+      description: Disponibilité saisonnière des produits, suivi graphique des abonnements (panier de légumes, ...), simulation de co-livraisons, ...
       fontAwesome:
         style: solid
         icon: location-dot
     - title: Ouverte et open source
+      description: La plateforme, le modèle et les outils, est développée en open source. Toute contribution en terme de fonctionnalité, d'encodage d'information, d'interfaçage est la bienvenue 🙂.
       fontAwesome:
         style: solid
         icon: door-open
@@ -50,12 +53,13 @@ platform:
       fontAwesome:
         style: solid
         icon: bolt
-    - title: Informel et structurée
-      description: Structurer la déstructure. Structuré. Structuré où ça vous semble important
+    - title: Informelle et structurée
+      description: Chatter pour convenir d'une heure de rencontre, partager une localisation ou commander est tellement facile pour collaborer mais difficile à intégrer dans ton agenda, ta facturation. Il est possible d'allier ces deux mondes que sont l'informel et le structuré via une mini application au sein d'une messagerie spécialisée par exemple.
       fontAwesome:
         style: solid
         icon: comments
     - title: Orienté activité
+      description: Rassembler, consolider les données ne sont que des étapes, la finalité est "d'activer" la donnée, la rendre utile pour les tâches inhérentes à ton activité. La plateforme grandit en apportant de nouvelles fonctionnalités pour la gestion de ton activité.
       fontAwesome:
         style: solid
         icon: gear
@@ -98,11 +102,19 @@ model:
         icon: key
 ---
 
-# Nos objectifs
+# Pourquoi logCiCa?
 
-* Facilitate le partage de l’information **logistique** (*commande, livraison, tournée*) et **circuits courts** (*qualité, diversité, valeurs, proximité, convivialité*)
-* Façonne l’avenir (stratégie) et **optimise** la gestion au quotidien (opérationnel)
-* Équipe la **collaboration** entre acteurs
+## Constat
 
-> À l’échelle de l’activité, l’entreprise, du groupement et du territoire
+* Les outils digitaux de la grande distribution sont mal adaptés à la richesse des circuits courts. 
+* Les logiciels d'entreprise (ERP) ne permettent pas d'atteindre l'ultime seuil de maturité : **la logistique collaborative**. 
+
+## Objectifs
+
+**À l’échelle de l’activité, l’entreprise, du groupement et du territoire.**
+**Au quotidien, à court, moyen et long terme**
+
+* **Consolider l’information logistique** (*commande, livraison, tournée*) et **circuits courts** (*qualité, diversité, valeurs, proximité, convivialité*)
+* **Équiper** les différents acteurs **pour optimiser** les activités logistiques et **planifier** l'avenir.
+* **Outiller la collaboration logistique**
 
