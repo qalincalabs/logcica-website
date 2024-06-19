@@ -4,7 +4,7 @@
   },
   "name": "Explore",
   "softwareConcern": "Frontend",
-  "type": "Logiciel de contenu",
+  "type": "Site web",
   "image": {
     "fileName": "explore-products-wide.png"
   },
@@ -17,6 +17,24 @@
   "modelVersion": "2.0",
   "url": "https://explore.logcica.org",
   "repoUrl": "https://github.com/qalincalabs/logcica-discover"
+},
+{
+  "_id": {
+    "$oid": "6672e1e394d6243cfea22e5c"
+  },
+  "name": "CMS",
+  "softwareConcern": "Frontend",
+  "type": "Logiciel de gestion de contenu",
+  "image": {
+    "fileName": "cms-wide.png"
+  },
+  "description": {
+    "short": {
+      "markdown": "Éditer les opportunités circuits courts"
+    }
+  },
+  "devStatus": "Actif ++",
+  "modelVersion": "2.0"
 },
 {
   "_id": {
