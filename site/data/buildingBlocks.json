@@ -1,322 +1,327 @@
-[{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada1a"
+[
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada1a"
+    },
+    "name": "Explore",
+    "softwareConcern": "Frontend",
+    "type": "Site web",
+    "image": {
+      "fileName": "explore-products-wide.png"
+    },
+    "description": {
+      "short": {
+        "markdown": "Explorer les opportunités circuits courts : produits, marchés, groupements, ..."
+      }
+    },
+    "devStatus": "Actif ++",
+    "modelVersion": "2.0",
+    "url": "https://explore.logcica.org",
+    "repoUrl": "https://github.com/qalincalabs/logcica-discover"
   },
-  "name": "Explore",
-  "softwareConcern": "Frontend",
-  "type": "Site web",
-  "image": {
-    "fileName": "explore-products-wide.png"
+  {
+    "_id": {
+      "$oid": "6672e1e394d6243cfea22e5c"
+    },
+    "name": "CMS",
+    "softwareConcern": "Frontend",
+    "type": "Logiciel de gestion de contenu",
+    "image": {
+      "fileName": "cms-wide.png"
+    },
+    "description": {
+      "short": {
+        "markdown": "Éditer les opportunités circuits courts"
+      }
+    },
+    "devStatus": "Actif ++",
+    "modelVersion": "2.0"
   },
-  "description": {
-    "short": {
-      "markdown": "Explorer les opportunités circuits courts : produits, marchés, groupements, ..."
-    }
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada1f"
+    },
+    "name": "API",
+    "softwareConcern": "Backend",
+    "type": "API",
+    "image": {
+      "fileName": "graphiql.png"
+    },
+    "description": {
+      "short": {
+        "markdown": "Le backend de la plateforme : API pour les différents outils visuels et d'intégration"
+      }
+    },
+    "devStatus": "Actif ++",
+    "modelVersion": "2.0",
+    "url": "https://graphiql.logcica.org/"
   },
-  "devStatus": "Actif ++",
-  "modelVersion": "2.0",
-  "url": "https://explore.logcica.org",
-  "repoUrl": "https://github.com/qalincalabs/logcica-discover"
-},
-{
-  "_id": {
-    "$oid": "6672e1e394d6243cfea22e5c"
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada1b"
+    },
+    "name": "Au quotidien",
+    "softwareConcern": "Frontend",
+    "type": "Logiciel de gestion (ERP)",
+    "image": {
+      "fileName": "erp-subscriptions.png"
+    },
+    "description": {
+      "short": {
+        "markdown": "Gérer ses activités et collaborer au quotidien (produits, commandes, abonnements, ...) via cet ERP collaboratif"
+      }
+    },
+    "devStatus": "En suspens",
+    "modelVersion": "2.0",
+    "url": "https://app.logcica.org"
   },
-  "name": "CMS",
-  "softwareConcern": "Frontend",
-  "type": "Logiciel de gestion de contenu",
-  "image": {
-    "fileName": "cms-wide.png"
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada1c"
+    },
+    "name": "Cockpit",
+    "softwareConcern": "Frontend",
+    "type": "Tableau de bord",
+    "image": {
+      "fileName": "cockpit-graphs.png"
+    },
+    "description": {
+      "short": {
+        "markdown": "Suivre ses activités, sa performance logistique, les indicateurs d'un territoire via des tableaux de bord"
+      }
+    },
+    "devStatus": "En suspens",
+    "modelVersion": "1.0 & 2.0",
+    "repoUrl": "https://github.com/qalincalabs/cockpit"
   },
-  "description": {
-    "short": {
-      "markdown": "Éditer les opportunités circuits courts"
-    }
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada1d"
+    },
+    "name": "Simulateur",
+    "softwareConcern": "Frontend",
+    "type": "Feuille de tableur",
+    "description": {
+      "short": {
+        "markdown": "Analyser et simuler les partenariats logistiques"
+      }
+    },
+    "image": {
+      "fileName": "simulateur-showcase-tours.png"
+    },
+    "note": "anciennement Koala",
+    "devStatus": "En suspens",
+    "modelVersion": "1.0",
+    "url": "https://docs.google.com/spreadsheets/d/1911VmU56UkR1faytEkeM-cnDhJSywItnhr506cJV-C0",
+    "repoUrl": "https://github.com/qalincalabs/koala"
   },
-  "devStatus": "Actif ++",
-  "modelVersion": "2.0"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada1b"
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada1e"
+    },
+    "name": "Chat",
+    "softwareConcern": "Frontend",
+    "type": "Application Slack",
+    "description": {
+      "short": {
+        "markdown": "Gérer ses activités et collaborer depuis la messagerie Slack"
+      }
+    },
+    "image": {
+      "fileName": "coconut-tour-wide.png"
+    },
+    "note": "anciennement Coconut",
+    "devStatus": "À refondre",
+    "modelVersion": "1.0",
+    "repoUrl": "https://github.com/qalincalabs/coconut"
   },
-  "name": "Au quotidien",
-  "softwareConcern": "Frontend",
-  "type": "Logiciel de gestion (ERP)",
-  "image": {
-    "fileName": "erp-subscriptions.png"
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada20"
+    },
+    "name": "Base de données",
+    "softwareConcern": "Backend",
+    "type": "Base de données",
+    "description": {
+      "short": {
+        "markdown": "La base de données (mongoDB) de la plateforme"
+      }
+    },
+    "devStatus": "Actif ++",
+    "modelVersion": "2.0"
   },
-  "description": {
-    "short": {
-      "markdown": "Gérer ses activités et collaborer au quotidien (produits, commandes, abonnements, ...) via cet ERP collaboratif"
-    }
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada21"
+    },
+    "name": "Connector",
+    "softwareConcern": "Integration",
+    "type": "Intégration et librarie",
+    "description": {
+      "short": {
+        "markdown": "Intègre les plateformes externes avec logCiCa"
+      }
+    },
+    "devStatus": "Actif",
+    "modelVersion": "1.0 et 2.0"
   },
-  "devStatus": "Actif ++",
-  "modelVersion": "2.0",
-  "url": "https://app.logcica.org"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada1c"
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada22"
+    },
+    "name": "Transformer",
+    "softwareConcern": "Integration",
+    "type": "Librarie de code",
+    "description": {
+      "short": {
+        "markdown": "Transforme les données entre un contexte externe (ex: plateforme de vente en ligne) et logCiCa"
+      }
+    },
+    "parent": "Connector",
+    "devStatus": "Actif",
+    "modelVersion": "1.0 et 2.0",
+    "url": "https://www.npmjs.com/package/@qalincalabs/logcica-connectors",
+    "repoUrl": "https://github.com/qalincalabs/logcica-connectors"
   },
-  "name": "Cockpit",
-  "softwareConcern": "Frontend",
-  "type": "Tableau de bord",
-  "image": {
-    "fileName": "cockpit-graphs.png"
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada23"
+    },
+    "name": "Consolidator",
+    "softwareConcern": "Integration",
+    "type": "Librarie de code",
+    "description": {
+      "short": {
+        "markdown": "Consolide les données externes reçues (transformées) dans logCiCa"
+      }
+    },
+    "parent": "Connector",
+    "devStatus": "En suspens",
+    "modelVersion": "1.0",
+    "url": "https://www.npmjs.com/package/@qalincalabs/consolidator",
+    "repoUrl": "https://github.com/qalincalabs/consolidator"
   },
-  "description": {
-    "short": {
-      "markdown": "Suivre ses activités, sa performance logistique, les indicateurs d'un territoire via des tableaux de bord"
-    }
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada24"
+    },
+    "name": "Auditeur",
+    "softwareConcern": "Integration",
+    "type": "Flux de travail n8n",
+    "description": {
+      "short": {
+        "markdown": "Observe les plateformes externes et notifie logCiCa via des évènements : nouvelle commande, produit modifié, ..."
+      }
+    },
+    "image": {
+      "fileName": "auditor-n8n-workflow.png"
+    },
+    "parent": "Connector",
+    "devStatus": "Actif",
+    "modelVersion": "1.0 et 2.0"
   },
-  "devStatus": "En suspens",
-  "modelVersion": "1.0 & 2.0",
-  "repoUrl": "https://github.com/qalincalabs/cockpit"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada1d"
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada25"
+    },
+    "name": "Embarqué",
+    "softwareConcern": "Integration",
+    "type": "Contenu web",
+    "description": {
+      "short": {
+        "markdown": "HTML généré et application sur mesure à embarquer dans des sites webs externes"
+      }
+    },
+    "devStatus": "Actif",
+    "modelVersion": "2.0"
   },
-  "name": "Simulateur",
-  "softwareConcern": "Frontend",
-  "type": "Feuille de tableur",
-  "description": {
-    "short": {
-      "markdown": "Analyser et simuler les partenariats logistiques"
-    }
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada26"
+    },
+    "name": "CDN",
+    "softwareConcern": "Integration",
+    "type": "API de contenu",
+    "description": {
+      "short": {
+        "markdown": "Héberge les ressources médias de la plateforme (ou les référence) : images, vidéos"
+      }
+    },
+    "devStatus": "Actif",
+    "modelVersion": "2.0",
+    "url": "https://dash.deno.com/playground/image-cdn-logcica"
   },
-  "image": {
-    "fileName": "simulateur-showcase-tours.png"
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada27"
+    },
+    "name": "Limosa",
+    "softwareConcern": "Backend",
+    "type": "Librarie de code",
+    "description": {
+      "short": {
+        "markdown": "Libraire de géolocalisation d'une adresse via OSM (gratuit)"
+      }
+    },
+    "devStatus": "Archivé",
+    "modelVersion": "1.0",
+    "url": "https://www.npmjs.com/package/@qalincalabs/limosa",
+    "repoUrl": "https://github.com/qalincalabs/limosa"
   },
-  "note": "anciennement Koala",
-  "devStatus": "En suspens",
-  "modelVersion": "1.0",
-  "url": "https://docs.google.com/spreadsheets/d/1911VmU56UkR1faytEkeM-cnDhJSywItnhr506cJV-C0",
-  "repoUrl": "https://github.com/qalincalabs/koala"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada1e"
+  {
+    "_id": {
+      "$oid": "65369d1b5be8146fac9ada28"
+    },
+    "name": "Site web",
+    "softwareConcern": "Frontend",
+    "type": "Site web de contenu",
+    "image": {
+      "fileName": "website-main-page-wide.png"
+    },
+    "description": {
+      "short": {
+        "markdown": "Le site web de la plateforme"
+      }
+    },
+    "devStatus": "Actif ++",
+    "modelVersion": "1.0",
+    "url": "https://logcica.netlify.app/",
+    "repoUrl": "https://github.com/qalincalabs/logcica-website"
   },
-  "name": "Chat",
-  "softwareConcern": "Frontend",
-  "type": "Application Slack",
-  "description": {
-    "short": {
-      "markdown": "Gérer ses activités et collaborer depuis la messagerie Slack"
-    }
+  {
+    "name": "Enquête producteur",
+    "softwareConcern": "POC",
+    "type": "Enquête",
+    "description": {
+      "short": {
+        "markdown": "Enquête Google Form auprès des producteurs sur les sujets suivants : information produit, commercialisation, logistique et digitalisation"
+      }
+    },
+    "devStatus": "En suspens",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSf7bAVfjoTIEC-ntGV0DwMBKTNqgjE8gVFkSjiiqBeSoWi-mQ/viewform?usp=sharing"
   },
-  "image": {
-    "fileName": "coconut-tour-wide.png"
+  {
+    "name": "Auto-évaluation",
+    "softwareConcern": "POC",
+    "type": "Feuille de tableur",
+    "description": {
+      "short": {
+        "markdown": "S'auto-évaluer sur ses pratiques logistiques"
+      }
+    },
+    "devStatus": "En suspens",
+    "url": "https://docs.google.com/spreadsheets/d/1JJ0YOk1iqKhOHJpXQ6FR9nWXlIcgeIP_5NEhUehcPVA"
   },
-  "note": "anciennement Coconut",
-  "devStatus": "À refondre",
-  "modelVersion": "1.0",
-  "repoUrl": "https://github.com/qalincalabs/coconut"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada1f"
-  },
-  "name": "API",
-  "softwareConcern": "Backend",
-  "type": "API",
-  "description": {
-    "short": {
-      "markdown": "Le backend de la plateforme : API pour les différents outils visuels et d'intégration"
-    }
-  },
-  "devStatus": "Actif ++",
-  "modelVersion": "2.0",
-  "repoUrl": "https://github.com/qalincalabs/logcica"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada20"
-  },
-  "name": "Base de données",
-  "softwareConcern": "Backend",
-  "type": "Base de données",
-  "description": {
-    "short": {
-      "markdown": "La base de données (mongoDB) de la plateforme"
-    }
-  },
-  "devStatus": "Actif ++",
-  "modelVersion": "2.0"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada21"
-  },
-  "name": "Connector",
-  "softwareConcern": "Integration",
-  "type": "Intégration et librarie",
-  "description": {
-    "short": {
-      "markdown": "Intègre les plateformes externes avec logCiCa"
-    }
-  },
-  "devStatus": "Actif",
-  "modelVersion": "1.0 et 2.0"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada22"
-  },
-  "name": "Transformer",
-  "softwareConcern": "Integration",
-  "type": "Librarie de code",
-  "description": {
-    "short": {
-      "markdown": "Transforme les données entre un contexte externe (ex: plateforme de vente en ligne) et logCiCa"
-    }
-  },
-  "parent": "Connector",
-  "devStatus": "Actif",
-  "modelVersion": "1.0 et 2.0",
-  "url": "https://www.npmjs.com/package/@qalincalabs/logcica-connectors",
-  "repoUrl": "https://github.com/qalincalabs/logcica-connectors"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada23"
-  },
-  "name": "Consolidator",
-  "softwareConcern": "Integration",
-  "type": "Librarie de code",
-  "description": {
-    "short": {
-      "markdown": "Consolide les données externes reçues (transformées) dans logCiCa"
-    }
-  },
-  "parent": "Connector",
-  "devStatus": "En suspens",
-  "modelVersion": "1.0",
-  "url": "https://www.npmjs.com/package/@qalincalabs/consolidator",
-  "repoUrl": "https://github.com/qalincalabs/consolidator"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada24"
-  },
-  "name": "Auditeur",
-  "softwareConcern": "Integration",
-  "type": "Flux de travail n8n",
-  "description": {
-    "short": {
-      "markdown": "Observe les plateformes externes et notifie logCiCa via des évènements : nouvelle commande, produit modifié, ..."
-    }
-  },
-  "image": {
-    "fileName": "auditor-n8n-workflow.png"
-  },
-  "parent": "Connector",
-  "devStatus": "Actif",
-  "modelVersion": "1.0 et 2.0"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada25"
-  },
-  "name": "Embarqué",
-  "softwareConcern": "Integration",
-  "type": "Contenu web",
-  "description": {
-    "short": {
-      "markdown": "HTML généré et application sur mesure à embarquer dans des sites webs externes"
-    }
-  },
-  "devStatus": "Actif",
-  "modelVersion": "2.0"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada26"
-  },
-  "name": "CDN",
-  "softwareConcern": "Integration",
-  "type": "API de contenu",
-  "description": {
-    "short": {
-      "markdown": "Héberge les ressources médias de la plateforme (ou les référence) : images, vidéos"
-    }
-  },
-  "devStatus": "Actif",
-  "modelVersion": "2.0",
-  "url": "https://dash.deno.com/playground/image-cdn-logcica"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada27"
-  },
-  "name": "Limosa",
-  "softwareConcern": "Backend",
-  "type": "Librarie de code",
-  "description": {
-    "short": {
-      "markdown": "Libraire de géolocalisation d'une adresse via OSM (gratuit)"
-    }
-  },
-  "devStatus": "Archivé",
-  "modelVersion": "1.0",
-  "url": "https://www.npmjs.com/package/@qalincalabs/limosa",
-  "repoUrl": "https://github.com/qalincalabs/limosa"
-},
-{
-  "_id": {
-    "$oid": "65369d1b5be8146fac9ada28"
-  },
-  "name": "Site web",
-  "softwareConcern": "Frontend",
-  "type": "Site web de contenu",
-  "image": {
-    "fileName": "website-main-page-wide.png"
-  },
-  "description": {
-    "short": {
-      "markdown": "Le site web de la plateforme"
-    }
-  },
-  "devStatus": "Actif ++",
-  "modelVersion": "1.0",
-  "url": "https://logcica.netlify.app/",
-  "repoUrl": "https://github.com/qalincalabs/logcica-website"
-},
-{
-  "name": "Enquête producteur",
-  "softwareConcern": "POC",
-  "type": "Enquête",
-  "description": {
-    "short": {
-      "markdown": "Enquête Google Form auprès des producteurs sur les sujets suivants : information produit, commercialisation, logistique et digitalisation"
-    }
-  },
-  "devStatus": "En suspens",
-  "url": "https://docs.google.com/forms/d/e/1FAIpQLSf7bAVfjoTIEC-ntGV0DwMBKTNqgjE8gVFkSjiiqBeSoWi-mQ/viewform?usp=sharing"
-},
-{
-  "name": "Auto-évaluation",
-  "softwareConcern": "POC",
-  "type": "Feuille de tableur",
-  "description": {
-    "short": {
-      "markdown": "S'auto-évaluer sur ses pratiques logistiques"
-    }
-  },
-  "devStatus": "En suspens",
-  "url": "https://docs.google.com/spreadsheets/d/1JJ0YOk1iqKhOHJpXQ6FR9nWXlIcgeIP_5NEhUehcPVA"
-},
-{
-  "name": "Consolidation produit - groupement de maraîchers",
-  "softwareConcern": "POC",
-  "type": "Feuille de tableur",
-  "description": {
-    "short": {
-      "markdown": "Consolider les variétés et les formats au sein d'un groupement de maraîchers"
-    }
-  },
-  "devStatus": "En suspens",
-  "url": "https://docs.google.com/spreadsheets/d/1QRn2w02TdhM8AslKMCJprpJcSJCkECs9raGz5R9Zveg/edit?usp=sharing"
-}]
+  {
+    "name": "Consolidation produit - groupement de maraîchers",
+    "softwareConcern": "POC",
+    "type": "Feuille de tableur",
+    "description": {
+      "short": {
+        "markdown": "Consolider les variétés et les formats au sein d'un groupement de maraîchers"
+      }
+    },
+    "devStatus": "En suspens",
+    "url": "https://docs.google.com/spreadsheets/d/1QRn2w02TdhM8AslKMCJprpJcSJCkECs9raGz5R9Zveg/edit?usp=sharing"
+  }
+]

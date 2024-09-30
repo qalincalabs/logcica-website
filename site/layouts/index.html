@@ -1,5 +1,12 @@
 {{ define "main" }}
 
+<div class="bg-primary pa1">
+    <p class="f6 lh-copy tc mw-100 v-mid mb0">
+        <i class="fa fa-bullhorn"></i>
+        Sept. 2024 : la <a href="https://graphiql.logcica.org/">documentation de l'API publique</a> est en ligne !!
+    </p>
+</div>
+
 {{ partial "jumbotron-main" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
 <div class="mw7 center pa2">
@@ -43,7 +50,7 @@
             </div>
         </div>
         <div class="flex flex-wrap mhn2 mv2">
-            {{ range first 5 .Site.Data.buildingBlocks }}
+            {{ range first 6 .Site.Data.buildingBlocks }}
             <div class="ph2 w-50 w-33-l">
                 <h3 class="tc">{{ .name }}
                     {{ with .url }}
